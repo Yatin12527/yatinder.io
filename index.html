@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="sections.css">
+  <link rel="stylesheet" type="text/css" href="images.css">
+  <link rel="stylesheet" type="text/css" href="texts.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="body.css">
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <script>
+    var isScrolling = false;
+
+    function scrollToSection(sectionId) {
+      if (isScrolling) return;
+
+      isScrolling = true;
+
+      var targetSection = document.getElementById(sectionId);
+
+      if (targetSection) {
+        var headerHeight = document.querySelector('.header').offsetHeight;
+
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'center'
+        });
+
+        setTimeout(function () {
+          isScrolling = false;
+        }, 500); 
+      }
+    }
+  </script>
+</head>
+<body class="background">
+<!-- header section -->
+  <div class="header">
+    <div class="button-container">
+      <button onclick="scrollToSection('cover-content')">Cover</button>
+      <button onclick="scrollToSection('about-me-content')">About me</button>
+      <button onclick="scrollToSection('education-content')">Education</button>
+      <button onclick="scrollToSection('experience-content')">Experience</button>
+      <button onclick="scrollToSection('project-content')">Projects</button>"
+      <button onclick="scrollToSection('skills-content')">Skills</button>
+      <button onclick="scrollToSection('contact-me-content')">Contact</button>
+    </div>
+  </div>
+  
+  <!-- cover section -->
+  <div class="spacer" style="background-color: white; height: 10px; width: 40%; margin-top: 500px;"></div>
+  
+  <p id="cover-content" class="cover">WELCOME TO MY PORTFOLIO</p>
+  
+  <div class="spacer" style="background-color: white; height: 10px; width: 40%; float: right;"></div>
+
+<!-- about me section -->
+  <div class="about_div">
+    <img src="images/first.jpg" class="image">
+    <center>
+      <p class="about">ABOUT ME</p>
+      <a class="resume" href="Resume 3.pdf" download>Download Resume</a>
+      <p id="about-me-content"></p>
+      <p class="text_one">
+        I am pursuing a Bachelor’s degree in Electronics and Communications Engineering at MDU. I have experience in software development, leading projects, and handling content. I built web applications with both the MERN stack and blockchain, led the content creation of recruitment drives at my university, and contributed to open-source projects. My experience in hackathons speaks to good problem-solving abilities, my collaborative approach, and my ability to think outside the box.
+      </p>
+    </center>
+  </div>
+
+<!-- education section -->
+  <div class="about_div">
+    <div>
+      <center>
+        <p class="education">EDUCATION</p>
+        <p id="education-content" class="text_two">DAV CENTENARY PUBLIC SCHOOL (2016 - 2021)</p>
+        <p class="text_three">High school ; 12th : 96.2% , 10th: 95.2%</p>
+        <p class="text_two">Maharshi Dayanand University, Rohtak (2022-present)</p>
+        <p class="text_three">B.Tech in Electronics and Communication</p>
+      </center>
+    </div>
+    <div>
+      <img src="images/second.jpg" class="second_image">
+    </div>
+  </div>
+
+  <div class="about_div">
+    <div>
+      <img src="images/third.jpg" class="third_image">
+    </div>
+    <div>
+      <center>
+        <p class="about">EXPERIENCE</p>
+        <p id="experience-content" class="text_four">UIET PLACEMENT CELL (2022-PRESENT)</p>
+        <p class="text_three">
+          As Head of content, Coordinated with 10+ companies for campus recruitment drives, improving placement rates.
+        </p>
+        <p class="text_two">Social Winter of Code (Jan 2024 – Mar 2024)</p>
+        <p class="text_three">
+          Created 30+ pull requests, with 25+ successfully merged.
+        </p>
+      </center>
+    </div>
+  </div>
+
+<!-- project section -->
+ <div class="project_div" >
+  <div class="center">
+    <p class="project" >Projects</p>
+
+    <div class="project_details" >
+      <p class="text_four">
+       <a href="https://github.com/Yatin12527/PassMyBook/tree/main" target="_blank">
+       1) Passmybook (Techack 4.0) | MERN Jan 2024</a>
+       </p>
+      <p class="text_project" id="project-content">• Developed a web application for selling and buying old books and notes</p>
+      <p class="text_project" >• Worked in a team of 4 during a hackathon</p>
+      <p class="text_project">• Implemented user authentication and book listing features using MongoDB, Express.js, React, and Node.js</p>
+      
+<br>
+      <p class="text_four"><a href="https://github.com/Yatin12527/synxkill" target="blank">
+      2) Synxkill (HackJNU 3.0) | MERN Jan 2024</a>
+      </p>
+      <p class="text_project">• Developed a MERN-based web application for personalized tutoring to learn different skills</p>
+      <p class="text_project">• Collaborated with a team of 3 during HackJNU</p>
+      <p class="text_project">• Backend development in progress, frontend nearing completion</p>
+      <p class="text_project">• Implemented features for user authentication and skill listing using MongoDB, Express.js, React, and Node.js</p>
+<br>
+      <p class="text_four"><a href="https://github.com/Yatin12527/nirnay-voting-system" target="blank">3) Nirnay (Hack It sapiens 2.0) | Blockchain March 2024</a>
+      </p>
+      <p class="text_project">• Developed a blockchain-based voting application</p>
+      <p class="text_project">• Frontend developed using React</p>
+      <p class="text_project">• Utilized MetaMask for Ethereum account management and transaction signing</p>
+      <p class="text_project">• Implemented smart contracts for secure and transparent voting</p>
+<br>
+      <p class="text_four">
+      <a href="https://github.com/Yatin12527/facerec/tree/main" target="_blank">
+      4) Facerec (Hack Geekhub) | Python, OpenCV March 2024
+      </a>
+      </p>
+      <p class="text_project">• Developed a Python-based web application for registering attendance using face recognition</p>
+      <p class="text_project">• Created during the Hack Geekhub hackathon at UIET</p>  
+      <p class="text_project">• Utilized OpenCV library for face recognition</p>
+    </div>
+  </div>
+</div>
+
+<!-- skill section -->
+  <center>
+    <div class="skills_div">
+      <div>
+        <p class="about">SKILLS</p>
+        <div class="flex-container">
+          <ul class="column">
+            <li id="skills-content" class="list">WEB AND MULTIMEDIA</li>
+            <li>• HTML, CSS and JS</li>
+            <li>• React.js</li>
+            <li>• Node.js, Express.js, MongoDB</li>
+          </ul>
+          <ul class="column">
+            <li class="list">OTHER SKILLS</li>
+            <li>• Event management</li>
+            <li>• Team coordination</li>
+            <li>• Adaptability and Flexibility</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </center>
+
+<!-- contact me section -->
+  <center>
+    <p id="contact-me-content" class="about" style="margin-top: 700px; font-size: 30px; margin-bottom: 5px;">CONTACT ME</p>
+  </center>
+  
+  <div class="footer">
+    <div class="logo">
+      <a href="mailto:chhoker.yatinder123@gmail.com" target="_blank" title="Email">
+        <img src="images/fourth.png" class="image_fourth">
+      </a>
+      <a href="https://github.com/Yatin12527" target="blank" title="Github">
+        <img src="images/fifth.png" class="image_fourth">
+      </a>
+      <a href="https://www.linkedin.com/in/yatinder-kumar-955b3a272/" target="blank" title="Linkedin">
+        <img src="images/sixth.png" class="image_fourth">
+      </a>
+    </div>
+    <p class="end">
+      Created by <button style="font-family: 'Montserrat', sans-serif; color: black; font-weight: bold; margin-top: auto; padding-left: 0px; margin-left: 0px; font-size: 16px;" onclick="scrollToSection('about-me-content')">Yatinder</button>
+    </p>
+  </div>
+</body>
+</html>

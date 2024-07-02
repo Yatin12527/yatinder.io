@@ -1,0 +1,34 @@
+.image{
+  border-radius:50%;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 35%;
+  height: 5%;
+  
+  
+}
+.second_image,.third_image{
+
+  margin-left: 50px;
+  width: 93%;
+  height: 500px;
+  margin-top: 80px;
+  z-index: 1;
+  border-radius: 25px;
+}
+.third_image{
+  margin-right: 40px;
+  margin-left: 0px;
+  width: 90%;
+  height: 450px;
+  border-radius: 15px;
+  margin-top: 0px;
+}
+.image_fourth {
+ width: 50px;
+ height: 50px;
+ margin: 0 30px;/* margin: 0 30px; is shorthand for:margin-top: 0;margin-right: 10px;margin-bottom: 0;margin-left: 10px; */
+}
+.flex-container {
+display: flex;
+}
